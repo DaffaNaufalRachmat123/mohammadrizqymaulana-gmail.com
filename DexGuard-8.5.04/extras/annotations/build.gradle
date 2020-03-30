@@ -1,0 +1,13 @@
+apply plugin: 'java'
+
+sourceSets.main {
+    java.srcDirs = ['src']
+}
+
+jar {
+    destinationDir file('lib')
+}
+
+task printClasspath << {
+    sourceSets.main.compileClasspath.each { println it }
+}

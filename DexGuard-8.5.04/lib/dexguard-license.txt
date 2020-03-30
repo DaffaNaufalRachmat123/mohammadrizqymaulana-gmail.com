@@ -1,0 +1,10 @@
+# DexGuard license file
+licensee              = Starbucks Coffee Company
+contact               =
+contactEmail          = sujatha@infotech.co.id
+product               = DexGuard
+version               = 7.*,8.*
+package               = com.starbucks.id
+expiryDate            = 2020-08-16
+maintenanceExpiryDate = 2020-08-16
+key                   = 0f7f706e63a526f5ad3492784d53b5b5eb2938669f8f7f12da8efb8238483f3b90a37f54a96a4e5b7ca2612f3eba225d4f7f1a3b62c8c22e98064eda989fedf9

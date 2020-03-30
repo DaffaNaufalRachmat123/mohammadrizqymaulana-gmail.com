@@ -1,0 +1,5 @@
+## Pinning
+gradlew assembleRelease -PStarbucksSigning=Pa$$w0rd -PstarbucksVersionCode=99 -Ppinning=true --no-daemon
+
+## Unpinning
+gradlew assembleRelease -PStarbucksSigning=Pa$$w0rd -PstarbucksVersionCode=99 -Punpinning=true --no-daemon
