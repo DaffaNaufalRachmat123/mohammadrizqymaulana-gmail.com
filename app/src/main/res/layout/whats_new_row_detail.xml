@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+
+    <com.starbucks.id.controller.extension.extendedView.CustomTextView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/txtWhatsNewDetailContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtWhatsNewDetailTitle"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp"
+        android:autoText="true"
+        android:gravity="center_vertical"
+        android:lineSpacingMultiplier="1.5"
+        android:minHeight="40dp"
+        android:padding="8dp"
+        android:text="List Item"
+        android:textColor="#222" />
+
+    <com.starbucks.id.controller.extension.extendedView.CustomTextView
+        android:id="@+id/txtWhatsNewDetailTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:padding="8dp"
+        android:text="Large Text"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+</RelativeLayout>

@@ -1,0 +1,383 @@
+<resources>
+    <string name="app_name">Starbucks ID</string>
+
+    <!--New String by Angga N P-->
+
+    <!--ID-->
+    <string name="id_setting_language">Pengaturan Bahasa</string>
+    <string name="id_setting_passcode">Kode Sandi</string>
+    <string name="id_setting_passcode_off">Matikan Kode Sandi</string>
+    <string name="id_setting_passcode_change">Ubah Kode Sandi</string>
+    <string name="id_sign_out">KELUAR</string>
+    <string name="id_confirm">OK</string>
+    <string name="id_cancel">BATAL</string>
+    <string name="id_share_app_header">Bagikan Aplikasi Ini Melalui</string>
+    <string name="id_sign_up">DAFTAR</string>
+    <string name="id_sign_in">MASUK</string>
+    <string name="id_card_number">Nomor Kartu</string>
+    <string name="id_hint_card_number">Nomor Kartu*</string>
+    <string name="id_hint_username">Alamat Email*</string>
+    <string name="id_hint_pwd">Kata Sandi*</string>
+    <string name="id_hint_rec_pwd">Konfirmasi Ulang Kata Sandi*</string>
+    <string name="id_hint_first_name">Nama Depan*</string>
+    <string name="id_hint_last_name">Nama Belakang*</string>
+    <string name="id_hint_dob">Tanggal Lahir*</string>
+    <string name="id_hint_mobile_phone">No. Handphone*</string>
+    <string name="id_add">TAMBAH</string>
+    <string name="id_save">SIMPAN</string>
+    <string name="id_hint_security_code">Kode Keamanan*</string>
+    <string name="id_amenities">Fasilitas</string>
+    <string name="id_get_dir">Dapatkan Petunjuk Arah</string>
+    <string name="id_call_now">Hubungi Sekarang</string>
+    <string name="id_open_hour">Waktu Beroperasi</string>
+    <string name="id_operational_hour">Waktu Beroperasi :</string>
+    <string name="id_search_store">Cari Store</string>
+    <string name="id_near_by">Store Terdekat</string>
+    <string name="id_signup_prof_header">Masukkan profil Anda</string>
+    <string name="id_signup_card_header">Masukkan informasi kartu Anda</string>
+    <string name="id_signup_acc_header">Masukkan informasi akun Anda</string>
+    <string name="id_val_card_num">Masukkan Nomor Kartu</string>
+    <string name="id_val_sec_code">Masukkan Kode Keamanan</string>
+    <string name="id_val_username">Masukkan Email Pengguna</string>
+    <string name="id_val_pwd">Masukkan Kata Sandi</string>
+    <string name="id_val_r_pwd">Masukan konfirmasi ulang Kata Sandi</string>
+    <string name="id_val_f_name">Masukkan Nama Depan</string>
+    <string name="id_val_l_name">Masukkan Nama Belakang</string>
+    <string name="id_val_dob">Masukkan Tanggal Lahir</string>
+    <string name="id_val_mobile">Masukkan No Handphone</string>
+    <string name="id_val_otp">Masukkan OTP Validasi</string>
+    <string name="id_val_pwd_not_match">Kata Sandi Tidak Sesuai</string>
+    <string name="id_val_pwd_8">Password minimal harus 8 karakter</string>
+    <string name="id_val_pwd_comb">Password terdiri dari kombinasi (3) jenis karakter: huruf kecil, huruf besar, angka , dan karakter spesial (e.g.,!, @, #, $, dll)</string>
+    <string name="id_val_email_valid">Email tidak valid</string>
+    <string name="id_sbux_card_16_digit">Nomor kartu harus memiliki 16 digit nomor</string>
+    <string name="id_val_sc_8">Kode keamanan minimal harus 8 karakter</string>
+    <string name="id_cant_reload_exc_bal">Maksimum saldo dalam kartu adalah Rp. 2.000.000. Silakan pilih nilai lainnya</string>
+    <string name="id_cur_month">Bulan Sekarang</string>
+    <string name="id_last_month">Bulan Sebelumnya</string>
+    <string name="id_phone_code">+62</string>
+    <string name="id_val_cb_signup">Saya tidak ingin menerima komunikasi pemasaran langsung dari Starbucks Indonesia</string>
+    <string name="id_val_hint_signup">Harap diperhatikan bahwa jika Anda anggota Starbucks dan Anda memilih untuk tidak menerima komunikasi pemasaran langsung dari kami, kami akan tetap mengirimkan komunikasi keanggotaan (termasuk namun tidak terbatas pada informasi tentang program keanggotaan, hadiah Starbucks, dan pembaruan keanggotaan).</string>
+    <string name="id_dob">Tanggal lahir</string>
+    <string name="pay_detail_id">Pindai ini untuk Menukarkan Reward atau Membayar</string>
+    <string name="sure_logout_id">Apakah anda yakin ingin keluar?</string>
+    <string name="id_val_wrong_mobile">Nomor telepon anda salah</string>
+    <string name="id_val_wrong_mobile2">Nomor telepon anda salah</string>
+    <string name="location_permission_detail_id">Pengguna menolak untuk berbagi lokasi ke aplikasi.</string>
+    <string name="no_card_display_detail_id">Tidak ada kartu yang bisa di tampilkan</string>
+    <string name="warning_id">Peringatan</string>
+
+    <!--Api Key-->
+    <string name="api_maps_key">AIzaSyB9sYbe6OReXG9w8CtH0PeSEav1xucvhXY</string>
+
+    <!--EN - US-->
+    <string name="cur_month">This Month</string>
+    <string name="last_month">Last Month</string>
+    <string name="en_operational_hour">Operational Hour :</string>
+    <string name="en_val_f_name">Please fill first name</string>
+    <string name="en_val_l_name">Please fill last name</string>
+    <string name="en_val_m_phone">Please fill mobile phone</string>
+    <string name="en_cant_reload_exc_bal">Maximum card balance is Rp. 2.000.000. Please select other value</string>
+    <string name="en_val_pwd_8">Password must have minimum 8 characters</string>
+    <string name="en_val_credit_card_no">Please fill credit card number</string>
+    <string name="en_val_pwd_comb">Passwords must contain some combination of at least three (3) of the following classes of characters: lowercase, uppercase, numeric, and “special” (e.g.,!, @, #, $, etc.) characters.</string>
+    <string name="loading">Loading</string>
+    <string name="cancel">CANCEL</string>
+    <string name="sign_out">SIGN OUT</string>
+    <string name="pay_detail">Scan this to Redeem Reward or Pay</string>
+    <string name="balance_error">Balance Error</string>
+    <string name="no_card_display_detail">No cards to be displayed</string>
+    <string name="location_permission_detail">User deny to share location to the app.</string>
+    <string name="sure_logout">Are you sure want to sign out?</string>
+    <string name="warning">Warning</string>
+    <string name="val_card_num">Please enter the Card Number</string>
+    <string name="sbux_card_16_digit">Card number must have 16 digits of number</string>
+    <string name="val_sec_code">Please enter the Security Code</string>
+    <string name="val_sc_8">Security Code must have minimum 8 characters</string>
+    <string name="val_username">Please enter your Email</string>
+    <string name="val_email_valid">Email format is invalid</string>
+    <string name="val_pwd">Please enter your Password</string>
+    <string name="val_r_pwd">Please reconfirm your Password</string>
+    <string name="val_pwd_not_match">Your Password does not match the confirmation password</string>
+    <string name="val_f_name">Please enter your First Name</string>
+    <string name="val_l_name">Please enter your Last Name</string>
+    <string name="val_dob">Please enter your Date of Birth</string>
+    <string name="val_mobile">Please enter your Mobile Phone</string>
+    <string name="val_otp">please enter your OTP Number</string>
+    <string name="val_wrong_mobile">Invalid mobile phone number</string>
+    <string name="val_wrong_mobile2">Invalid mobile phone number</string>
+    <string name="dob">Date of Birth</string>
+
+
+    <!--System Local-->
+    <string name="local_enc">QW5wIzE5MTExOTkx</string>
+    <string name="local_salt">VHJvamFuIzE5MTkxOQ</string>
+
+    <!--System REST-->
+    <string name="rest_content_auth">andk93-h-infotech.co.id</string>
+    <string name="rest_mob_id">mob-AjdrnOuTPIlvtWcN</string>
+    <string name="rest_mob_key">mob-key-eLazpUIKB4Nasm6ED2cOhfzyU</string>
+    <string name="key_algorithm">AES</string>
+    <string name="factory_algorithm">AES/CBC/PKCS5PADDING</string>
+    <string name="enc_iv">12mgf74yhAh21353</string>
+    <string name="enc_key">Pr3s1d4nt</string>
+
+
+    <!--System User Default-->
+    <string name="passcode_b">vRwJUg9ux5okz8IU/5b6RA==</string>
+    <string name="passcode">vIsGOdkqPtVrQL+bWoZQhw==</string>
+    <string name="refresh_token">O1evXChNcL6tBGn2XWgqLe2WSuWhdQudpmRoXPY4m9A=</string>
+    <string name="acc_token">BR5F1AwFdp9jAKpaHaQkvQ==</string>
+    <string name="email">7dRFYn2AhyaPj4WbkdBsCg==</string>
+    <string name="pn">p7CQIFhTHeB5eHZYSwY4daZFONZE9nAFTN9ffMpKt/M=</string>
+    <string name="lang">ql7A1gC3hOPEethQ3r8FPQ==</string>
+    <string name="stp">MLIgnG7kMHcpixPSdJY2Sg==</string>
+    <string name="login_session">wwodkUh1jUtDtwbdWe7Gaw==</string>
+    <string name="first_launch">Jbd9Q3Ypr8unYhAAnM4QYA==</string>
+    <string name="pref_name">com.starbucks.id</string>
+    <string name="fc_algorithm">PBEWithSHA256And256BitAES-CBC-BC</string>
+
+    <!--System Toolbar Title-->
+    <string name="f_order_t">Menu</string>
+    <string name="f_pay_t">Starbucks Card</string>
+    <string name="f_store_t">Our Store</string>
+    <string name="f_Inbox_t">Inbox</string>
+
+    <string name="f_pay_reload">Top up</string>
+    <string name="f_pay_reload_id">Isi Ulang</string>
+
+    <string name="f_message">Message</string>
+    <string name="f_message_id">Pesan</string>
+
+    <string name="f_offers">Offers</string>
+    <string name="f_offers_id">Penawaran</string>
+
+    <string name="no_cards">You have no Card</string>
+    <string name="no_activity">You have no activities</string>
+
+    <!--Register-->
+    <string name="hint_email">Email</string>
+    <string name="hint_address">Address</string>
+    <string name="hint_city">City</string>
+    <string name="hint_country">Country</string>
+    <string name="hint_beverage_id">Minuman favorit saya</string>
+
+    <!--Button-->
+    <string name="btn_cancel">Cancel</string>
+    <string name="btn_cancel_id">Batal</string>
+    <string name="btn_register">Register</string>
+
+    <!--Error Handler-->
+    <string name="mt_notif_id">Sayangnya server saat ini tidak tersedia atau sibuk, silakan coba lagi.</string>
+    <string name="mt_notif">Unfortunately the server is currently unavailable or busy, please try again.</string>
+
+    <string name="it_notif_id">Saat ini Anda tidak terhubung ke Internet.\n
+        Harap sambungkan ke internet.</string>
+    <string name="it_notif">Currently you are not connected to Internet.\n
+        Please connect to Internet.
+    </string>
+
+
+    <!--Pay Tab-->
+    <string name="active_id">Aktif</string>
+    <string name="active">Active</string>
+
+    <string name="deactive_id">Tidak Aktif</string>
+    <string name="deactive">Inactive</string>
+
+    <string name="title_add_card">ADD NEW STARBUCKS CARD</string>
+    <string name="title_add_card_id">TAMBAHKAN KARTU STARBUCKS BARU</string>
+
+    <string name="msg_same_card">You can\'t transfer from the same card.</string>
+    <string name="msg_same_card_id">Kamu tidak bisa transfer dari kartu yang sama.</string>
+
+    <string name="subtitle_add_card">Collect stars and earn Rewards when you pay with a registered card</string>
+    <string name="subtitle_add_card_id">Kumpulkan bintang untuk mendapatkan rewards saat anda membayar
+        dengan kartu yang sudah di registrasikan.</string>
+
+    <string name="hint_card_number">Card Number</string>
+    <string name="hint_card_number_id">Nomor Kartu</string>
+
+    <string name="hint_lost_card">LOST / STOLEN</string>
+    <string name="hint_lost_card_id">HILANG / DICURI</string>
+
+    <string name="hint_damaged_card">DAMAGED</string>
+    <string name="hint_damaged_card_id">RUSAK</string>
+
+    <string name="hint_card_security">PIN</string>
+
+    <string name="hint_t_from">Transfer from :</string>
+    <string name="hint_t_to">Transfer to :</string>
+
+    <string name="bt_reload">TOP UP</string>
+
+    <string name="bt_reason">Please Select Reason</string>
+    <string name="bt_reason_id">Pilih Alasan</string>
+
+    <string name="bt_confirm">Confirm</string>
+
+    <string name="bt_select">SELECT STARBUCKS CARD</string>
+
+    <string name="submit">Submit</string>
+    <string name="submit_id">Kirim</string>
+
+    <string name="timestamp">As of </string>
+    <string name="timestamp_id">Terakhir diperbarui </string>
+
+    <!--<string name="hint_lost">Transfer any balance on this Card to another card on your account before Deactivating.-->
+        <!--Please call Customer Care for support if you do not have an alternative registered Card to transfer the balance onto.-->
+    <!--</string>-->
+    <string name="hint_lost">If you need further assistance, please call our Customer Care at (021) 1-500-078 or e-mail to customer.care@starbucks.co.id</string>
+    <string name="hint_lost_id">Jika Anda membutuhkan bantuan lebih lanjut, silakan menghubungi Customer Care di (021) 1-500-078 atau email ke customer.care@starbucks.co.id"</string>
+
+    <!--Main Tab-->
+    <string name="browse_menu_id">BROWSE OUR MENU</string>
+    <string name="reward_title">Starbucks Rewards</string>
+    <!---->
+
+
+    <!--Nested Fragment Title-->
+    <string name="reward_benefit_title">Rewards Benefit</string>
+    <string name="profile_title">Profile</string>
+    <string name="whats_new_title">What\'s New</string>
+
+    <string name="change_detail_title">Change Detail</string>
+    <string name="change_detail_title_id">Ubah Detail</string>
+
+    <string name="personal_title_id">Kontak Info</string>
+    <string name="personal_title">Personal</string>
+
+    <string name="change_profile_title_id">Ganti Profil</string>
+    <string name="change_profile_title">Change Profile</string>
+    <!---->
+
+
+    <!--Personal-->
+    <string name="header_personal">Please input your profile</string>
+    <string name="header_personal_id">Masukkan Informasi Akun Anda</string>
+
+    <string name="header_personal_address">Address Information</string>
+    <string name="header_personal_address_id">Informasi Alamat</string>
+
+    <string name="update_id">PERBAHARUI</string>
+
+
+
+    <!--Passcode-->
+    <string name="pc_title">Passcode Lock</string>
+    <string name="pc_title_id">Kode Sandi</string>
+
+    <string name="en_failure">Failure</string>
+    <string name="id_failure">Gagal</string>
+
+    <string name="en_old_passcode">Your old passcode is invalid</string>
+    <string name="id_old_passcode">Kode sandi lama anda salah</string>
+
+    <string name="en_enter_old_passcode">Enter your old passcode</string>
+    <string name="id_enter_old_passcode">Masukkan kode sandi lama Anda</string>
+
+    <string name="en_enter_new_passcode">Set your new passcode</string>
+    <string name="id_enter_new_passcode">Buat passcode baru</string>
+
+    <string name="desc_passcode_id">Passcode dibutuhkan untuk membuka aplikasi Starbucks.</string>
+
+    <string name="security_purpose">For security purposes, you will be signed out of your account. To create a new passcode, please sign in and go to Account &amp; Settings</string>
+    <string name="security_purpose_id">Demi alasan keamanan, Anda akan otomatis keluar dari Akun Anda. Untuk membuat kode sandi baru, silakan lihat di menu Akun dan Pengaturan</string>
+
+    <string name="passcode_not_match">Passcode you entered is incorrect</string>
+    <string name="passcode_not_match_id">Passcode salah</string>
+
+    <string name="passcode_off">Passcode turned off</string>
+    <string name="passcode_off_id">Kode sandi dimatikan</string>
+
+    <string name="confirm_passcode">Confirm your passcode</string>
+    <string name="confirm_passcode_id">Konfirmasi kode sandi Anda</string>
+
+    <string name="passcode_success">Success set passcode</string>
+    <string name="passcode_success_id">Sukses atur kode sandi</string>
+    <string name="emulator_id">Perangkat ini menggunakan emulator. Anda tidak bisa menggunakan aplikasi ini.</string>
+    <string name="emulator">This device is emulator. You can\'t use this app.</string>
+    <string name="root_id">Perangkat ini telah di root. Anda tidak bisa menggunakan aplikasi ini.</string>
+    <string name="root">This device is rooted. You can\'t use this app.</string>
+    <string name="reload_history_id">Riwayat  Isi Ulang</string>
+    <string name="reload_history">Top up History</string>
+    <string name="Please_paid_before_id">Mohon dibayar sebelum</string>
+    <string name="Please_paid_before">Please pay before</string>
+    <string name="status_waiting_payment">Status : WAITING PAYMENT</string>
+    <string name="empty_time">00:00:00</string>
+    <string name="expired">EXPIRED!</string>
+    <string name="expired_on_id">Kadaluarsa pada</string>
+    <string name="expired_on">Expired On</string>
+    <string name="triple_zero">000</string>
+    <string name="sure_cancel">Are you sure you want to cancel this Top up?</string>
+    <string name="sure_cancel_id">Yakin ingin membatalkan Top up ini?</string>
+    <string name="no">No</string>
+    <string name="no_id">Tidak</string>
+    <string name="yes">Yes</string>
+    <string name="yes_id">Ya</string>
+    <string name="reload_ammount_id">Tolong pilih nominal Isi Ulang anda</string>
+    <string name="reload_ammount">Please pick your Top up amount</string>
+    <string name="as_of">As of</string>
+    <string name="as_of_id">Terakhir Diperbarui</string>
+    <string name="total">Total</string>
+    <string name="note_id">Catatan</string>
+    <string name="note_id_1">Satu Nomor Akun Virtual digunakan untuk satu kali transaksi \'Isi Ulang\'</string>
+    <string name="note_id_2">Mohon cek kembali sebelum melakukan pembayaran</string>
+    <string name="status_success">Status : SUCCESS</string>
+    <string name="payment_complete_id">Pembayaran berhasil</string>
+    <string name="payment_complete">Payment successful</string>
+    <string name="status_canceled">Status : CANCELLED</string>
+    <string name="transaction_cancelled_id">Transaksi telah dibatalkan</string>
+    <string name="transaction_cancelled">Transaction has been cancelled</string>
+    <string name="status_expired">Status : EXPIRED</string>
+    <string name="text_copy_id">Nomor akun virtual berhasil di salin</string>
+    <string name="text_copy">Successfully copied the virtual account number</string>
+    <string name="label">label</string>
+    <string name="cancel_trx_btn">Batalkan Transaksi</string>
+    <string name="reload_amm_id">Pilih Nominal Isi Ulang</string>
+    <string name="other_id">Lainya</string>
+    <string name="va_id">Nomor Akun Virtual</string>
+    <string name="copy">Salin</string>
+    <string name="id_double_click_to_exit">Klik kembali sekali lagi untuk keluar.</string>
+    <string name="en_double_click_to_exit">Please click back again to exit.</string>
+    <string name="id_empty_activity">Anda tidak punya memiliki riwayat transaksi</string>
+    <string name="id_activity_history_title">Riwayat Transaksi Kartu</string>
+    <string name="en_activity_history_title">Card Transaction History</string>
+    <string name="phone_number_start">+62</string>
+    <string name="id_invalid_phone">Nomor telepon anda salah</string>
+    <string name="en_invalid_phone">Invalid mobile phone number</string>
+    <string name="id_invalid_phone2">Nomor telepon anda salah</string>
+    <string name="en_invalid_phone2">Invalid mobile phone number</string>
+    <string name="id_empty_va">Tidak ada Virtual Account</string>
+    <string name="id_forgot_password">Lupa kata sandi?</string>
+    <string name="id_congratulation">Selamat!</string>
+    <string name="id_warning_fill_promotion_code">Silahkan isi kode promosi</string>
+    <string name="en_warning_fill_promotion_code">Please enter the promotion code</string>
+    <string name="id_date_not_valid">Tanggal tidak valid</string>
+    <string name="en_date_not_valid">Date not valid</string>
+    <string name="en_ecode">E-Code</string>
+    <string name="id_ecode">E-Kode</string>
+    <string name="id_promo_code_hint">Terapkan Kode Promo untuk dinikmati   Bonus Bintang / Hadiah / Penawaran Khusus</string>
+    <string name="en_promo_code_hint">Apply Promotion Code to Enjoy   Bonus Stars / Rewards / Special Offers</string>
+    <string name="en_morning">Good Morning</string>
+    <string name="id_morning">Selamat Pagi</string>
+    <string name="en_afternoon">Good Afternoon</string>
+    <string name="id_afternoon">Selamat Siang</string>
+    <string name="en_evening">Good Evening</string>
+    <string name="id_evening">Selamat Sore</string>
+    <string name="en_night">Good Night</string>
+    <string name="id_night">Selamat Malam</string>
+    <string name="id_beverage">Minuman</string>
+    <string name="id_food">Makanan</string>
+    <string name="via">VIA</string>
+    <string name="merchandise">Merchandise</string>
+    <string name="bean">Whole Bean</string>
+    <string name="en_beverage">Beverages</string>
+    <string name="en_food">Foods</string>
+    <string name="id_bean">Whole Bean</string>
+    <!---->
+    <string name="retake"><u>Retake</u></string>
+
+    <!---->
+
+</resources>

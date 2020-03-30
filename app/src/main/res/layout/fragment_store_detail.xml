@@ -1,0 +1,464 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/colorPrimary">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/colorPrimary">
+
+            <com.starbucks.id.controller.extension.extendedView.StoreMapView
+                android:id="@+id/StoreDetailMapview"
+                android:layout_width="fill_parent"
+                android:layout_height="250dp"></com.starbucks.id.controller.extension.extendedView.StoreMapView>
+
+            <com.starbucks.id.controller.extension.extendedView.CustomTextView
+                android:id="@+id/txtAmenities"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtStoreNameDetail"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="false"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Amenities"
+                android:textColor="@color/greenPrimary" />
+
+            <ImageButton
+                android:id="@+id/btnExpand"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignBottom="@+id/txtAmenities"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:background="?android:selectableItemBackground"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_action_bellow_black" />
+
+            <RelativeLayout
+                android:id="@+id/imageHolder"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtAmenities"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="10dp">
+
+                <ImageView
+                    android:id="@+id/imgDriveThru"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/drive_thru" />
+
+                <ImageView
+                    android:id="@+id/imgOvenWarmed"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_toRightOf="@+id/imgDriveThru"
+                    android:src="@drawable/oven_warmed" />
+
+                <ImageView
+                    android:id="@+id/imgLB"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_toRightOf="@+id/imgOvenWarmed"
+                    android:focusableInTouchMode="true"
+                    android:src="@drawable/lb" />
+
+                <ImageView
+                    android:id="@+id/imgCloverBrewed"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_toRightOf="@+id/imgLB"
+                    android:src="@drawable/clover_brewed" />
+
+                <ImageView
+                    android:id="@+id/imgEvMenu"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_toRightOf="@+id/imgCloverBrewed"
+                    android:src="@drawable/ev_menu" />
+
+                <ImageView
+                    android:id="@+id/imgWifi"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_toRightOf="@+id/imgEvMenu"
+                    android:src="@drawable/wifi" />
+
+                <ImageView
+                    android:id="@+id/imgDigi"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_toRightOf="@+id/imgWifi"
+                    android:src="@drawable/digi" />
+
+                <ImageView
+                    android:id="@+id/img24h"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_toRightOf="@+id/imgDigi"
+                    android:src="@drawable/is24" />
+
+                <ImageView
+                    android:id="@+id/imgReserve"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_toRightOf="@+id/img24h"
+                    android:src="@drawable/reserve" />
+
+                <ImageView
+                    android:id="@+id/imgSbuxCard"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_toRightOf="@+id/imgReserve"
+                    android:src="@drawable/sbuxcard" />
+            </RelativeLayout>
+
+            <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+                android:id="@+id/storeAmenities"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/imageHolder"
+                android:layout_marginLeft="10dp"
+                app:ael_duration="100"
+                app:ael_expanded="false"
+                app:ael_orientation="vertical">
+
+                <TableLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                    <TableRow
+                        android:id="@+id/trDriveThru"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/imgDriveThruExpanded"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_gravity="center_vertical"
+                            android:src="@drawable/drive_thru" />
+
+                        <com.starbucks.id.controller.extension.extendedView.CustomTextView
+                            android:id="@+id/txtAmenDriveThru"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="5dp"
+                            android:text="Drive Thru" />
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/trOven"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/imgOvenWarmedExpanded"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_gravity="center_vertical"
+                            android:src="@drawable/oven_warmed" />
+
+                        <com.starbucks.id.controller.extension.extendedView.CustomTextView
+                            android:id="@+id/txtAmenOvenWarmed"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="5dp"
+                            android:text="Oven Warmed Food" />
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/trLB"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/imgLBExpanded"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_gravity="center_vertical"
+                            android:focusableInTouchMode="true"
+                            android:src="@drawable/lb" />
+
+                        <com.starbucks.id.controller.extension.extendedView.CustomTextView
+                            android:id="@+id/txtAmenLB"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="5dp"
+                            android:text="La Boulange Menu" />
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/trClover"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/imgCloverBrewedExpanded"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_gravity="center_vertical"
+                            android:src="@drawable/clover_brewed" />
+
+                        <com.starbucks.id.controller.extension.extendedView.CustomTextView
+                            android:id="@+id/txtAmenCloverBrewed"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="5dp"
+                            android:text="Fizzio" />
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/trEvMenu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/imgEvMenuExpanded"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_gravity="center_vertical"
+                            android:src="@drawable/ev_menu" />
+
+                        <com.starbucks.id.controller.extension.extendedView.CustomTextView
+                            android:id="@+id/txtAmenEvMenu"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="5dp"
+                            android:text="Evening Menu" />
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/trWifi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/imgWifiExpanded"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_below="@+id/img5"
+                            android:layout_gravity="center_vertical"
+                            android:src="@drawable/wifi" />
+
+                        <com.starbucks.id.controller.extension.extendedView.CustomTextView
+                            android:id="@+id/txtAmenWifi"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="5dp"
+                            android:text="Wireless Hotspot" />
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/trDigi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/imgDigiExpanded"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_below="@+id/img6"
+                            android:layout_gravity="center_vertical"
+                            android:src="@drawable/digi" />
+
+                        <com.starbucks.id.controller.extension.extendedView.CustomTextView
+                            android:id="@+id/txtAmenDigi"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="5dp"
+                            android:text="Espresso Choice" />
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/tr24"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/img24Expanded"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_below="@+id/img6"
+                            android:layout_gravity="center_vertical"
+                            android:src="@drawable/is24" />
+
+                        <com.starbucks.id.controller.extension.extendedView.CustomTextView
+                            android:id="@+id/txtAmen24"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="5dp"
+                            android:text="24 Hours" />
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/trReserve"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/imgReserveExpanded"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_below="@+id/img7"
+                            android:layout_gravity="center_vertical"
+                            android:src="@drawable/reserve" />
+
+                        <com.starbucks.id.controller.extension.extendedView.CustomTextView
+                            android:id="@+id/txtAmenReserve"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="5dp"
+                            android:text="Reserve Store" />
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/trSbuxCard"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/imgSbuxCardExpanded"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_below="@+id/img8"
+                            android:layout_gravity="center_vertical"
+                            android:src="@drawable/sbuxcard" />
+
+                        <com.starbucks.id.controller.extension.extendedView.CustomTextView
+                            android:id="@+id/txtAmenSbuxCard"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="5dp"
+                            android:text="Starbucks Card" />
+                    </TableRow>
+
+
+                </TableLayout>
+            </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+            <com.starbucks.id.controller.extension.extendedView.CustomTextView
+                android:id="@+id/txtStoreNameDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/StoreDetailMapview"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="10dp"
+                android:text="STORE NAME"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/greenPrimary" />
+
+            <com.starbucks.id.controller.extension.extendedView.CustomTextView
+                android:id="@+id/txtGetDirHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/storeAmenities"
+                android:layout_alignStart="@+id/txtAmenities"
+                android:layout_alignLeft="@+id/txtAmenities"
+                android:layout_marginTop="23dp"
+                android:text="Get Directions"
+                android:textColor="@color/greenPrimary" />
+
+            <com.starbucks.id.controller.extension.extendedView.CustomTextView
+                android:id="@+id/txtGetDir"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtGetDirHeader"
+                android:layout_alignStart="@+id/txtGetDirHeader"
+                android:layout_alignLeft="@+id/txtGetDirHeader"
+                android:text="Address" />
+
+            <com.starbucks.id.controller.extension.extendedView.CustomTextView
+                android:id="@+id/txtOpenUntil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtGetDir"
+                android:layout_alignStart="@+id/txtGetDir"
+                android:layout_alignLeft="@+id/txtGetDir" />
+
+            <com.starbucks.id.controller.extension.extendedView.CustomTextView
+                android:id="@+id/txtCallNowHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtOpenUntil"
+                android:layout_alignStart="@+id/txtOpenUntil"
+                android:layout_alignLeft="@+id/txtGetDirHeader"
+                android:layout_marginTop="10dp"
+                android:text="Call Now"
+                android:textColor="@color/greenPrimary" />
+
+            <com.starbucks.id.controller.extension.extendedView.CustomTextView
+                android:id="@+id/txtPhoneNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtCallNowHeader"
+                android:layout_alignStart="@+id/txtCallNowHeader"
+                android:layout_alignLeft="@+id/txtCallNowHeader"
+                android:text="Phone" />
+
+            <com.starbucks.id.controller.extension.extendedView.CustomTextView
+                android:id="@+id/txtOpenHourHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtPhoneNumber"
+                android:layout_alignStart="@+id/txtPhoneNumber"
+                android:layout_alignLeft="@+id/txtPhoneNumber"
+                android:layout_alignParentBottom="false"
+                android:layout_marginTop="10dp"
+                android:text="Open Hours"
+                android:textColor="@color/greenPrimary" />
+
+            <com.starbucks.id.controller.extension.extendedView.CustomTextView
+                android:id="@+id/txtOpenHour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtOpenHourHeader"
+                android:layout_alignStart="@+id/txtOpenHourHeader"
+                android:layout_alignLeft="@+id/txtOpenHourHeader"
+                android:text="Open from" />
+
+            <Button
+                android:id="@+id/btnCall"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/txtCallNowHeader"
+                android:layout_alignTop="@+id/txtCallNowHeader"
+                android:layout_alignBottom="@+id/txtPhoneNumber"
+                android:background="?android:selectableItemBackground" />
+
+            <Button
+                android:id="@+id/btnGetDir"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/txtGetDirHeader"
+                android:layout_alignTop="@+id/txtGetDirHeader"
+                android:layout_alignBottom="@+id/txtOpenUntil"
+                android:background="?android:selectableItemBackground" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

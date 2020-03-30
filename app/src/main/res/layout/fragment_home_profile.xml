@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/NSVRoot"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimary">
+
+    <LinearLayout
+        android:id="@+id/NSVLL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btActivity"
+            style="@android:style/Widget.Button.Inset"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bt_tr_blbr_bot"
+            android:drawableEnd="@drawable/ic_action_paper"
+            android:gravity="start"
+            android:padding="24dp"
+            android:text="Card Transaction History"
+            android:textAlignment="viewStart"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btReward"
+            style="@android:style/Widget.Button.Inset"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bt_tr_blbr_bot"
+            android:drawableEnd="@drawable/ic_action_reward"
+            android:gravity="start"
+            android:padding="24dp"
+            android:text="Rewards"
+            android:textAlignment="viewStart"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btPersonal"
+            style="@android:style/Widget.Button.Inset"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bt_tr_blbr_bot"
+            android:drawableEnd="@drawable/ic_action_personal"
+            android:gravity="start"
+            android:padding="24dp"
+            android:text="Personal"
+            android:textAlignment="viewStart"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btSetting"
+            style="@android:style/Widget.Button.Inset"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bt_tr_blbr_bot"
+            android:drawableEnd="@drawable/ic_action_setting"
+            android:gravity="start"
+            android:padding="24dp"
+            android:text="Settings"
+            android:textAlignment="viewStart"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btProgramTracker"
+            style="@android:style/Widget.Button.Inset"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bt_tr_blbr_bot"
+            android:drawableEnd="@drawable/ic_action_setting"
+            android:gravity="start"
+            android:padding="24dp"
+            android:text="Program Tracker"
+            android:textAlignment="viewStart"
+            android:textSize="20sp"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btTest"
+            style="@android:style/Widget.Button.Inset"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bt_tr_blbr_bot"
+            android:drawableEnd="@drawable/ic_action_setting"
+            android:gravity="start"
+            android:padding="24dp"
+            android:text="Settings2"
+            android:textAlignment="viewStart"
+            android:textSize="20sp"
+            android:visibility="gone" />
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

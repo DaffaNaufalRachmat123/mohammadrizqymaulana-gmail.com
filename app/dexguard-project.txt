@@ -1,0 +1,54 @@
+# DexGuard's default settings are fine for this sample application.
+
+# We'll just display some more statistics about the processed code.
+-verbose
+
+
+# If you encounter problems in your project, you can try to narrow down
+# the issue by disabling some processing steps:
+#
+#-dontshrink
+#-dontoptimize
+#-dontobfuscate
+-dontwarn
+
+# You can also check if the problem can be solved by keeping additional
+# code and/or resources:
+#
+#-keep class * { *; }
+#-keepattributes *
+#
+#-keepresources */*
+#-keepresourcefiles res/**
+#-keepresourcefiles assets/**
+#-keepresourcefiles lib/**
+#-keepresourcexmlattributenames **
+
+# These are really crude settings that you shouldn't use for building
+# actual releases, but it's easier to start from a working configuration,
+# which you can then refine.
+
+-multidex
+#-dontshrink
+-optimizations optimize.conservatively 
+
+-assumenosideeffects class android.util.Log {
+    public static boolean isLoggable(java.lang.String, int);
+    public static int v(...);
+    public static int d(...);
+    public static int i(...);
+    public static int w(...);
+    public static int e(...);
+  public static java.lang.String getStackTraceString(java.lang.Throwable);
+}
+
+-keepresourcefiles assets/gfx/*
+-keepresourcefiles assets/fonts/*
+-keepresourcefiles assets/html/*
+-encryptstrings "4*","5*", "android.*", "bank*","bca*","bri*","bni*","mandiri*", "CARD*","card*","com.facebook*","fb*","http*","SBUX*","1234562016SbuxID","SbuxAimiaItdev1234562016"
+-obfuscatecode class com.facebook.**
+-obfuscatecode class com.android.**
+
+
+
+

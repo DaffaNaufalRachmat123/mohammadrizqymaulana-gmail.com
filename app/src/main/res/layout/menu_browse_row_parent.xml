@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:background="@color/gray_accent"
+    android:orientation="vertical">
+
+    <com.starbucks.id.controller.extension.extendedView.CustomTextView
+        android:id="@+id/txtMenuParent"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_centerVertical="true"
+        android:height="50dp"
+        android:gravity="center"
+        android:paddingLeft="15dp"
+        android:textColor="@color/white"
+        android:textSize="14sp" />
+
+    <ImageView
+        android:id="@+id/imgMenu"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentTop="false"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="15dp"
+        app:srcCompat="@drawable/arrow_right_black" />
+</RelativeLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/CLDRoot"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp"
+    android:background="@color/white">
+
+    <com.starbucks.id.controller.extension.extendedView.CustomTextView
+        android:id="@+id/txtHeaderLanguage"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/vtr_bb"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="CHANGE LANGUAGE"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/black_dop"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+        android:id="@+id/btnEnglish"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/transparent"
+        android:elegantTextHeight="false"
+        android:gravity="center"
+        android:text="English"
+        android:textAllCaps="false"
+        android:textColor="@color/black_dop"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtHeaderLanguage" />
+
+    <Button
+        android:id="@+id/btnBahasa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@android:color/transparent"
+        android:gravity="center"
+        android:text="Indonesia"
+        android:textAllCaps="false"
+        android:textColor="@color/black_dop"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnEnglish" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

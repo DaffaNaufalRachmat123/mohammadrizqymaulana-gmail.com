@@ -1,0 +1,322 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:background="@color/colorPrimary"
+    android:focusable="auto"
+    android:focusableInTouchMode="true"
+    tools:layout_editor_absoluteY="25dp">
+
+    <ProgressBar
+        android:id="@+id/pb"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/RVContainer"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:animateLayoutChanges="true"
+        android:focusable="auto"
+        android:focusableInTouchMode="true"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/NSV"
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+            android:scrollIndicators="none"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imgFood"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_alignParentStart="false"
+                    android:layout_alignParentLeft="false"
+                    android:background="?android:selectableItemBackground"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/defaultpage_720_h"
+                    app:layout_constraintBottom_toTopOf="@+id/imgVia"
+                    app:layout_constraintDimensionRatio="1:1"
+                    app:layout_constraintEnd_toStartOf="@+id/imgBean"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintHorizontal_chainStyle="packed"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imgBvg" />
+
+                <ImageView
+                    android:id="@+id/imgBean"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_alignParentStart="false"
+                    android:layout_alignParentLeft="false"
+                    android:background="?android:selectableItemBackground"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/defaultpage_720_h"
+                    app:layout_constraintBottom_toBottomOf="@+id/imgFood"
+                    app:layout_constraintDimensionRatio="1:1"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/imgFood"
+                    app:layout_constraintTop_toTopOf="@+id/imgFood" />
+
+                <ImageView
+                    android:id="@+id/imgVia"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="left|bottom"
+                    android:background="?android:selectableItemBackground"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/defaultpage_720_h"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintDimensionRatio="1:1"
+                    app:layout_constraintEnd_toStartOf="@+id/imgMerchant"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintHorizontal_chainStyle="packed"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imgFood"
+                    app:layout_constraintVertical_chainStyle="packed" />
+
+                <ImageView
+                    android:id="@+id/imgMerchant"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:background="?android:selectableItemBackground"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/defaultpage_720_h"
+                    app:layout_constraintBottom_toBottomOf="@+id/imgVia"
+                    app:layout_constraintDimensionRatio="w,1:1"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintHorizontal_chainStyle="packed"
+                    app:layout_constraintStart_toEndOf="@+id/imgVia"
+                    app:layout_constraintTop_toTopOf="@+id/imgVia"
+                    app:layout_constraintVertical_chainStyle="packed" />
+
+                <ImageView
+                    android:id="@+id/imgBvg"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:background="?android:selectableItemBackground"
+                    android:contentDescription="TODO"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/defaultpage_720_h"
+                    app:layout_constraintBottom_toTopOf="@+id/imgFood"
+                    app:layout_constraintDimensionRatio="w,2:1"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_chainStyle="spread" />
+
+                <FrameLayout
+                    android:id="@+id/FLBvg"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:alpha="0.2"
+                    android:background="@color/black_dop"
+                    app:layout_constraintBottom_toBottomOf="@+id/imgBvg"
+                    app:layout_constraintDimensionRatio="h,1:0.1"
+                    app:layout_constraintEnd_toEndOf="@+id/imgBvg"
+                    app:layout_constraintStart_toStartOf="@+id/imgBvg">
+
+                </FrameLayout>
+
+                <com.starbucks.id.controller.extension.extendedView.CustomTextView
+                    android:id="@+id/tvBvg"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:gravity="center"
+                    android:text="Beverages"
+                    android:textColor="@color/white"
+                    app:layout_constraintBottom_toBottomOf="@+id/FLBvg"
+                    app:layout_constraintEnd_toEndOf="@+id/imgBvg"
+                    app:layout_constraintStart_toStartOf="@+id/imgBvg"
+                    app:layout_constraintTop_toTopOf="@+id/FLBvg" />
+
+                <FrameLayout
+                    android:id="@+id/FLFood"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:alpha="0.2"
+                    android:background="@color/black_dop"
+                    app:layout_constraintBottom_toTopOf="@+id/imgVia"
+                    app:layout_constraintDimensionRatio="h,1:0.2"
+                    app:layout_constraintEnd_toStartOf="@+id/imgBean"
+                    app:layout_constraintStart_toStartOf="@+id/imgFood">
+
+                </FrameLayout>
+
+                <com.starbucks.id.controller.extension.extendedView.CustomTextView
+                    android:id="@+id/tvFood"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:gravity="center"
+                    android:text="Foods"
+                    android:textColor="@color/white"
+                    app:layout_constraintBottom_toBottomOf="@+id/FLFood"
+                    app:layout_constraintEnd_toEndOf="@+id/FLFood"
+                    app:layout_constraintStart_toStartOf="@+id/FLFood"
+                    app:layout_constraintTop_toTopOf="@+id/FLFood" />
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:alpha="0.2"
+                    android:background="@color/black_dop"
+                    app:layout_constraintBottom_toTopOf="@+id/imgMerchant"
+                    app:layout_constraintDimensionRatio="h,1:0.2"
+                    app:layout_constraintEnd_toEndOf="@+id/imgBean"
+                    app:layout_constraintStart_toStartOf="@+id/imgBean">
+
+                </FrameLayout>
+
+                <com.starbucks.id.controller.extension.extendedView.CustomTextView
+                    android:id="@+id/tvBean"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:gravity="center"
+                    android:text="Whole Bean"
+                    android:textColor="@color/white"
+                    app:layout_constraintBottom_toTopOf="@+id/imgMerchant"
+                    app:layout_constraintEnd_toEndOf="@+id/imgBean"
+                    app:layout_constraintStart_toStartOf="@+id/imgBean"
+                    app:layout_constraintTop_toTopOf="@+id/FLFood" />
+
+                <FrameLayout
+                    android:id="@+id/FLVia"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:alpha="0.2"
+                    android:background="@color/black_dop"
+                    app:layout_constraintBottom_toBottomOf="@+id/imgVia"
+                    app:layout_constraintDimensionRatio="h,1:0.2"
+                    app:layout_constraintEnd_toStartOf="@+id/imgMerchant"
+                    app:layout_constraintStart_toStartOf="@+id/imgVia">
+
+                </FrameLayout>
+
+                <com.starbucks.id.controller.extension.extendedView.CustomTextView
+                    android:id="@+id/tvVia"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:gravity="center"
+                    android:text="Via"
+                    android:textColor="@color/white"
+                    app:layout_constraintBottom_toBottomOf="@+id/FLVia"
+                    app:layout_constraintEnd_toEndOf="@+id/FLVia"
+                    app:layout_constraintStart_toStartOf="@+id/FLVia"
+                    app:layout_constraintTop_toTopOf="@+id/FLVia" />
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:alpha="0.2"
+                    android:background="@color/black_dop"
+                    app:layout_constraintBottom_toBottomOf="@+id/imgMerchant"
+                    app:layout_constraintDimensionRatio="h,1:0.2"
+                    app:layout_constraintEnd_toEndOf="@+id/imgMerchant"
+                    app:layout_constraintStart_toStartOf="@+id/imgMerchant">
+
+                </FrameLayout>
+
+                <com.starbucks.id.controller.extension.extendedView.CustomTextView
+                    android:id="@+id/tvMerchand"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:gravity="center"
+                    android:text="Merchandise"
+                    android:textColor="@color/white"
+                    app:layout_constraintBottom_toBottomOf="@+id/imgMerchant"
+                    app:layout_constraintEnd_toEndOf="@+id/imgMerchant"
+                    app:layout_constraintStart_toStartOf="@+id/imgMerchant"
+                    app:layout_constraintTop_toTopOf="@+id/FLVia" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.core.widget.NestedScrollView>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/CLContainer"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:animateLayoutChanges="true"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ExpandableListView
+                android:id="@+id/lstBrowseMenu"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_centerHorizontal="true"
+                android:animateLayoutChanges="true"
+                android:background="@color/black_dop"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.starbucks.id.controller.extension.extendedView.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:text="Search Menu Return 0"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

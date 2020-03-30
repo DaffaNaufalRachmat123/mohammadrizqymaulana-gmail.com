@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/CoLFRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/NSVContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/NSVCLContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Switch
+                android:id="@+id/swSTP"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bt_tr_blbr_bot"
+                android:fontFamily="@font/sodosans_narrow_regular"
+                android:padding="16dp"
+                android:text="Shake To Pay"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_chainStyle="packed" />
+
+            <Button
+                android:id="@+id/btLanguage"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bt_tr_blbr_bot"
+                android:gravity="start"
+                android:padding="16dp"
+                android:text="Language"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="@color/black_dop"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/swSTP"
+                app:layout_constraintVertical_chainStyle="spread_inside" />
+
+            <Button
+                android:id="@+id/btPassCode"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bt_tr_blbr_bot"
+                android:gravity="start"
+                android:padding="16dp"
+                android:text="Passcode Lock"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="@color/black_dop"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toTopOf="@+id/btFaq"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btLanguage"
+                app:layout_constraintVertical_chainStyle="spread" />
+
+            <Button
+                android:id="@+id/btFaq"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bt_tr_blbr_bot"
+                android:gravity="start"
+                android:padding="16dp"
+                android:text="FAQ"
+                android:textAlignment="textStart"
+                android:textColor="@color/black_dop"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toTopOf="@+id/btPri"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btPassCode"
+                app:layout_constraintVertical_chainStyle="packed" />
+
+            <Button
+                android:id="@+id/btTerms"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bt_tr_blbr_bot"
+                android:gravity="start"
+                android:padding="16dp"
+                android:text="Terms &amp; Condition"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="@color/black_dop"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toTopOf="@+id/btCont"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btPri" />
+
+            <Button
+                android:id="@+id/btPri"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bt_tr_blbr_bot"
+                android:gravity="start"
+                android:padding="16dp"
+                android:text="Privacy Policy"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="@color/black_dop"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toTopOf="@+id/btTerms"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btFaq" />
+
+            <Button
+                android:id="@+id/btCont"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bt_tr_blbr_bot"
+                android:gravity="start"
+                android:padding="16dp"
+                android:text="Contact Us"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="@color/black_dop"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toTopOf="@+id/btShare"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btTerms" />
+
+            <Button
+                android:id="@+id/btShare"
+                android:layout_width="0dp"
+                android:layout_height="49dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/bt_tr_blbr_bot"
+                android:padding="8dp"
+                android:text="Share"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="@color/black_dop"
+                android:textSize="18sp"
+                android:visibility="gone"
+                app:layout_constraintBottom_toTopOf="@+id/btTutorial"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btCont" />
+
+            <Button
+                android:id="@+id/btTutorial"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bt_tr_blbr_bot"
+                android:gravity="start"
+                android:padding="16dp"
+                android:text="Tutorial"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="@color/black_dop"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toTopOf="@+id/btLogOut"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btShare" />
+
+            <Button
+                android:id="@+id/btLogOut"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bt_tr_blbr_bot"
+                android:gravity="start"
+                android:padding="16dp"
+                android:text="Sign Out"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="@color/black_dop"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toTopOf="@+id/tvVer"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btTutorial" />
+
+            <com.starbucks.id.controller.extension.extendedView.CustomTextView
+                android:id="@+id/tvId"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="100dp"
+                android:autoSizeMaxTextSize="14dp"
+                android:autoSizeMinTextSize="10dp"
+                android:autoSizeTextType="uniform"
+                android:ellipsize="end"
+                android:gravity="end"
+                android:maxLines="1"
+                android:padding="8dp"
+                android:text="TextView"
+                android:textAlignment="viewEnd"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/btLogOut"
+                app:layout_constraintEnd_toEndOf="@+id/btLogOut"
+                app:layout_constraintStart_toStartOf="@+id/btLogOut"
+                app:layout_constraintTop_toTopOf="@+id/btLogOut" />
+
+            <com.starbucks.id.controller.extension.extendedView.CustomTextView
+                android:id="@+id/tvVer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginBottom="8dp"
+                android:padding="8dp"
+                android:text="App version 3.5"
+                android:textColor="@color/gray_dop"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

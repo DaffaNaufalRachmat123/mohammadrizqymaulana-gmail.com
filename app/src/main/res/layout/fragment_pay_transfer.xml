@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/CLBase"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:animateLayoutChanges="true">
+
+    <ProgressBar
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/NSV"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/colorPrimary"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/CLTraNSVBase"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:animateLayoutChanges="true">
+
+            <ImageView
+                android:id="@+id/ivCard"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="42dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="42dp"
+                android:background="@drawable/vwh_rc"
+                android:elevation="4dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/vwh_rc"
+                android:visibility="invisible"
+                app:layout_constraintDimensionRatio="4:2.5"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btCardFrom" />
+
+            <ProgressBar
+                android:id="@+id/pb"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toBottomOf="@+id/ivCard"
+                app:layout_constraintEnd_toEndOf="@+id/ivCard"
+                app:layout_constraintStart_toStartOf="@+id/ivCard"
+                app:layout_constraintTop_toTopOf="@+id/ivCard" />
+
+            <com.starbucks.id.controller.extension.extendedView.CustomTextView
+                android:id="@+id/tvCardNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="348927589273589"
+                android:textColor="@color/gray_dop"
+                app:layout_constraintEnd_toStartOf="@+id/ibStatFro"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintHorizontal_chainStyle="packed"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ivCard" />
+
+            <ImageButton
+                android:id="@+id/ibStatFro"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginStart="8dp"
+                android:background="@android:color/transparent"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:scaleType="fitStart"
+                android:src="@drawable/def_card"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="@+id/tvCardNo"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/tvCardNo"
+                app:layout_constraintTop_toTopOf="@+id/tvCardNo" />
+
+            <com.starbucks.id.controller.extension.extendedView.CustomTextView
+                android:id="@+id/tvBalance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="Rp. 5.000"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:visibility="invisible"
+                app:layout_constraintEnd_toStartOf="@+id/ibRefresh"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintHorizontal_chainStyle="packed"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvCardNo" />
+
+            <ImageButton
+                android:id="@+id/ibRefresh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/ic_action_refresh"
+                android:elevation="4dp"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="@+id/tvBalance"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/tvBalance"
+                app:layout_constraintTop_toTopOf="@+id/tvBalance" />
+
+            <ProgressBar
+                android:id="@+id/pbBalance"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="@+id/ibRefresh"
+                app:layout_constraintEnd_toEndOf="@+id/ibRefresh"
+                app:layout_constraintStart_toStartOf="@+id/ibRefresh"
+                app:layout_constraintTop_toTopOf="@+id/ibRefresh" />
+
+            <com.starbucks.id.controller.extension.extendedView.CustomTextView
+                android:id="@+id/tvTS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:text="as of 13/04/2018 14:00"
+                android:textColor="@color/gray_dop"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvBalance" />
+
+            <Button
+                android:id="@+id/btCardFrom"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:elevation="4dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="18dp"
+                android:text="@string/bt_select"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="@+id/ivCard"
+                app:layout_constraintStart_toStartOf="@+id/ivCard"
+                app:layout_constraintTop_toBottomOf="@+id/tvTraFro" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvFrom"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:elevation="6dp"
+                android:nestedScrollingEnabled="false"
+                android:visibility="gone"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                app:layout_constraintEnd_toEndOf="@+id/btCardFrom"
+                app:layout_constraintStart_toStartOf="@+id/btCardFrom"
+                app:layout_constraintTop_toBottomOf="@+id/btCardFrom" />
+
+            <ImageView
+                android:id="@+id/ivFrom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/ic_action_bellow"
+                android:elevation="7dp"
+                app:layout_constraintBottom_toBottomOf="@+id/btCardFrom"
+                app:layout_constraintEnd_toEndOf="@+id/btCardFrom"
+                app:layout_constraintTop_toTopOf="@+id/btCardFrom" />
+
+            <com.starbucks.id.controller.extension.extendedView.CustomTextView
+                android:id="@+id/tvTraFro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:text="@string/hint_t_from"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/ivCard2"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="42dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="42dp"
+                android:background="@drawable/vwh_rc"
+                android:elevation="4dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/vwh_rc"
+                android:visibility="invisible"
+                app:layout_constraintDimensionRatio="4:2.5"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btCardTo" />
+
+            <ProgressBar
+                android:id="@+id/pb2"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                app:layout_constraintBottom_toBottomOf="@+id/ivCard2"
+                app:layout_constraintEnd_toEndOf="@+id/ivCard2"
+                app:layout_constraintStart_toStartOf="@+id/ivCard2"
+                app:layout_constraintTop_toTopOf="@+id/ivCard2" />
+
+            <com.starbucks.id.controller.extension.extendedView.CustomTextView
+                android:id="@+id/tvTraTo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="8dp"
+                android:text="@string/hint_t_to"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvTS" />
+
+            <Button
+                android:id="@+id/btCardTo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:elevation="4dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:text="@string/bt_select"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="@+id/ivCard2"
+                app:layout_constraintStart_toStartOf="@+id/ivCard2"
+                app:layout_constraintTop_toBottomOf="@+id/tvTraTo" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvTo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:elevation="6dp"
+                android:nestedScrollingEnabled="false"
+                android:visibility="gone"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                app:layout_constraintEnd_toEndOf="@+id/btCardTo"
+                app:layout_constraintStart_toStartOf="@+id/btCardTo"
+                app:layout_constraintTop_toBottomOf="@+id/btCardTo" />
+
+            <ImageView
+                android:id="@+id/ivTo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/ic_action_bellow"
+                android:elevation="7dp"
+                app:layout_constraintBottom_toBottomOf="@+id/btCardTo"
+                app:layout_constraintEnd_toEndOf="@+id/btCardTo"
+                app:layout_constraintTop_toTopOf="@+id/btCardTo" />
+
+            <com.starbucks.id.controller.extension.extendedView.CustomTextView
+                android:id="@+id/tvCardTo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="348927589273589"
+                android:textColor="@color/gray_dop"
+                app:layout_constraintEnd_toStartOf="@+id/ibStatTo"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintHorizontal_chainStyle="packed"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ivCard2" />
+
+            <ImageButton
+                android:id="@+id/ibStatTo"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginStart="8dp"
+                android:background="@android:color/transparent"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:scaleType="fitStart"
+                android:src="@drawable/def_card"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="@+id/tvCardTo"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/tvCardTo"
+                app:layout_constraintTop_toTopOf="@+id/tvCardTo" />
+
+            <com.starbucks.id.controller.extension.extendedView.CustomTextView
+                android:id="@+id/tvBalanceTo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="Rp. 5.000"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:visibility="invisible"
+                app:layout_constraintEnd_toStartOf="@+id/ibRefreshTo"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintHorizontal_chainStyle="packed"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvCardTo" />
+
+            <ImageButton
+                android:id="@+id/ibRefreshTo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/ic_action_refresh"
+                android:elevation="4dp"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="@+id/tvBalanceTo"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/tvBalanceTo"
+                app:layout_constraintTop_toTopOf="@+id/tvBalanceTo" />
+
+            <ProgressBar
+                android:id="@+id/pbBalanceTo"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="@+id/ibRefreshTo"
+                app:layout_constraintEnd_toEndOf="@+id/ibRefreshTo"
+                app:layout_constraintStart_toStartOf="@+id/ibRefreshTo"
+                app:layout_constraintTop_toTopOf="@+id/ibRefreshTo" />
+
+            <com.starbucks.id.controller.extension.extendedView.CustomTextView
+                android:id="@+id/tvTsTo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:text="as of 13/04/2018 14:00"
+                android:textColor="@color/gray_dop"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvBalanceTo" />
+
+            <Button
+                android:id="@+id/btConfirm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="24dp"
+                android:background="@drawable/base_btn_green"
+                android:elevation="7dp"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:text="@string/bt_confirm"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvTsTo" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

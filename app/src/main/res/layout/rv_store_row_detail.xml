@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?android:attr/selectableItemBackground"
+    android:orientation="vertical">
+
+    <com.starbucks.id.controller.extension.extendedView.CustomTextView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/txtStoreName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:gravity="center_vertical"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:text="SBUX Store"
+        android:textColor="@color/greenPrimary" />
+
+    <com.starbucks.id.controller.extension.extendedView.CustomTextView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/txtStoreAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtStoreName"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:gravity="center_vertical"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:text="SBUX Address" />
+
+    <com.starbucks.id.controller.extension.extendedView.CustomTextView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/txtStoreHour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtStoreAddress"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:gravity="center_vertical"
+        android:paddingLeft="8dp"
+        android:text="SBUX open hour" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="wrap_content"
+        android:layout_height="2dp"
+        android:layout_below="@+id/txtStoreHour"
+        android:layout_marginTop="15dp"
+        android:background="@color/black_dop"
+        android:focusable="false"
+        android:focusableInTouchMode="false">
+
+    </View>
+
+</RelativeLayout>

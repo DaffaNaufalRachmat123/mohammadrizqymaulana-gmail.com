@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "252090779570",
+    "firebase_url": "https://starbuckscardapp2019.firebaseio.com",
+    "project_id": "starbuckscardapp2019",
+    "storage_bucket": "starbuckscardapp2019.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:252090779570:android:0b25ce8f0365427c3946ab",
+        "android_client_info": {
+          "package_name": "com.starbucks.id"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "252090779570-l231ri854lcuhgpl9t123r11lm7imijf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA28b_FqqrYtFHTS3WTPHoLzDmxZtsWn6Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "252090779570-l231ri854lcuhgpl9t123r11lm7imijf.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "252090779570-2p96dtc0qdrji0d3qcrprtk8jmqgkoc4.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.starbucks.indonesia"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

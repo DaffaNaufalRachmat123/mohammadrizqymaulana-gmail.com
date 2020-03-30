@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="transparent" type="color">#00FFFFFF</color>
+    <color name="white" type="color">#FFFFFFFF</color>
+    <color name="black_dop">#2d2926</color>
+
+    <color name="colorPrimary">#FFFFFF</color>
+    <color name="colorPrimaryDark">#dad8d6</color>
+    <color name="colorAccent">#dad8d6</color>
+
+    <color name="gray_tr">#F5F5F5</color>
+    <color name="gray_accent">#d9d7d7</color>
+    <color name="gray_dop">#9e9c9c</color>
+
+    <color name="bluePrimary">#2798ea</color>
+    <color name="bluePrimaryDark">#0d64a3</color>
+
+    <color name="greenPrimary">#00653e</color>
+    <color name="greenAccent">#00a862</color>
+
+    <color name="goldPrimary">#C2A661</color>
+    <color name="goldAccent">#D1A762</color>
+    <color name="goldCream">#F3F1e7</color>
+
+    <color name="error_state_red">#e75b52</color>
+
+    <color name="black_primary">#000000</color>
+    <color name="black_secondary">#212121</color>
+
+    <color name="calendar_color">#4bb46e</color>
+
+<!--    Font Colour-->
+    <color name="font_reguler">#212121</color>
+    <color name="font_bold">#212121</color>
+
+
+</resources>
